@@ -1,0 +1,82 @@
+// С названиями цветов и оттенков туговато
+$base-bg-color: #fff; // Базовый цвет фона
+$gold-color: #FFBC6B; // Золотой цвет
+$gold-star-color: #FFBC6B; // Золотой цвет
+$dark-red-color: #B8121A; // Темно красный цвет
+$dark-blue-color: #464069; // Темно сингий цвет
+$our-mission-text-color: #041A38; // Темно сингий цвет
+$white-text-color: #fff; // Белый цвет текста
+$font-popins: 'Poppins', sans-serif;
+$font-playfair: 'Playfair Display', serif;
+$btn-white-color: #fff;
+$btn-red-color: #B8121A;
+$social-icon-colol: #2A263D;
+$social-icon-hover-colol: #FFBC6B;
+
+
+html {
+    font-size: 9px;
+}
+
+
+@media (min-width: 3840px) {
+
+    html{
+        font-size: 18px;
+    }
+
+}
+
+
+@media screen and (min-width: 1400px) and (max-width: 3839.8px) {
+    html{
+        font-size: 9px;
+    }
+}
+
+
+@media screen and (max-width: 1399.8px) {
+
+    html {
+        font-size: 6.75px;
+    }
+
+}
+
+.body{
+    width: 100%;
+    min-width: 320px;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    font-family: $font-popins;
+    font-family: $font-playfair;
+}
+
+.body__wrap{
+    // max-width: 1920px;
+    max-width: 213.333rem;
+    margin: 0 auto;
+    background: $base-bg-color;
+    position: relative;
+}
+
+button{
+    border: none;
+}
+
+
+.center{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    // background: #FFBC6B;
+
+    .ddd{
+        width: 1px;
+        height: 100%;
+        background-color: red;
+    }
+}

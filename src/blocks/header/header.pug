@@ -1,0 +1,14 @@
+header.header
+    .header__logo
+        a.header__logo-link(href="index.html")
+            img(src="../img/logo-star.png", alt="logo-star")
+    .header__right
+        nav.header__nav
+            include header-nav.pug
+        .header__description
+            p.header__description-text|FIND YOUR COMMUNITY WITH
+            h1.header__description-h1|GREENZONE HERO
+            .white__btn-wrap.header__description-btn-wrap
+                button.white__btn.header__description-btn|Find a Business
+    .header__join
+        include header-join.pug

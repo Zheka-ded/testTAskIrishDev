@@ -1,0 +1,45 @@
+.white__btn-wrap{
+    width: max-content;
+    // border: 3px solid $btn-white-border;
+    border: 0.333rem solid $btn-white-color;
+    // padding: 10px 18px;
+    padding: 1.111rem 2rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+
+    &:hover, &:hover button{
+        border-color: $gold-color;
+        color: $gold-color;
+        transition: 0.3s all ease;
+    }
+
+    button{
+        color: $white-text-color;
+        font-family: $font-popins;
+        font-style: normal;
+        font-weight: 500;
+        // font-size: 18px;
+        font-size: 2rem;
+        // line-height: 27px;
+        line-height: 3rem;
+        background: transparent;
+        transition: 0.3s all ease;
+    }
+}
+
+.red__btn{
+    font-family: $font-popins;
+    font-weight: 500;
+    font-size: 2.222rem;
+    line-height: 3.333rem;
+    color: $btn-red-color;
+    background: $btn-white-color;
+    border: 0.111rem solid $btn-red-color;
+    transition: 0.3s all ease;
+
+    &:hover{
+        color: $btn-white-color;
+        background: $btn-red-color;
+        transition: 0.3s all ease;
+    }
+}
