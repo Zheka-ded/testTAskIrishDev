@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 3.777rem;
+    padding-top: 3rem;
     padding-left: 3.777rem;
     padding-right: 2rem;
 
@@ -28,7 +28,7 @@
         // margin-top: 3.777rem;
         // margin-left: 3.777rem;
         z-index: 1;
-        margin-right: 30rem;
+        margin-right: 28rem;
 
         .nav__menu-home{
 
@@ -50,13 +50,13 @@
     &-buttons{
         display: flex;
         flex-direction: row;
-        margin-left: 24.35rem;
+        margin-left: 23.35rem;
 
         .nav__menu-btn-join{
-            padding: 0.2rem 2.7rem;
+            padding: 0.8rem 3.3rem;
         }
         .nav__menu-btn-signin{
-            padding: 0.2rem 1.5rem;
+            padding: 0.8rem 1.5rem;
         }
     }
 }
@@ -71,19 +71,17 @@
 
         li{
             margin-left: 2.2rem;
+        }
+    }
 
-            a{
-                i{
-                    font-size: 2.222rem;
-                    color: $social-icon-colol;
-                    transition: 0.3s all ease;
-
-                    &:hover{
-                        color: $social-icon-hover-colol;
-                        transition: 0.3s all ease;
-                    }
-                }
-            }
+    &-icons{
+        font-size: 2.222rem;
+        color: $social-icon-colol;
+        transition: 0.3s all ease;
+    
+        &:hover{
+            color: $social-icon-hover-colol;
+            transition: 0.3s all ease;
         }
     }
 }

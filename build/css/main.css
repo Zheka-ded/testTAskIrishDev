@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+    v2.0 | 20110126
+    License: none (public domain)
 */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big,
 cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol,
@@ -92,7 +92,8 @@ button {
   .center .ddd {
     width: 1px;
     height: 100%;
-    background-color: red; }
+    background-color: red;
+    z-index: 100; }
 
 .white__btn-wrap {
   width: -webkit-max-content;
@@ -136,6 +137,7 @@ button {
     transition: 0.3s all ease; }
 
 .header {
+  position: relative;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -188,7 +190,7 @@ button {
             flex-direction: column;
     -webkit-align-self: center;
             align-self: center;
-    padding-top: 10.777rem;
+    padding-top: 3.777rem;
     padding-bottom: 7.111rem; }
     .header__description-text {
       color: #fff;
@@ -197,8 +199,8 @@ button {
       font-weight: normal;
       font-size: 2.222rem;
       line-height: 3.333rem;
-      -webkit-transform: translate(-14rem);
-              transform: translate(-14rem); }
+      -webkit-transform: translate(-12.2rem);
+              transform: translate(-12.2rem); }
     .header__description-h1 {
       color: #FFBC6B;
       font-family: "Playfair Display", serif;
@@ -206,8 +208,8 @@ button {
       font-weight: normal;
       font-size: 5.555rem;
       line-height: 7.444rem;
-      -webkit-transform: translate(-23.333rem);
-              transform: translate(-23.333rem);
+      -webkit-transform: translate(-22.233rem);
+              transform: translate(-22.233rem);
       margin-bottom: 4.444rem; }
     .header__description-btn-wrap {
       -webkit-transform: translate(-4rem);
@@ -229,7 +231,7 @@ button {
           align-items: center;
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
-  padding-top: 3.777rem;
+  padding-top: 3rem;
   padding-left: 3.777rem;
   padding-right: 2rem; }
   .nav__menu-rectangle {
@@ -253,7 +255,7 @@ button {
     font-size: 2.222rem;
     line-height: 3.333rem;
     z-index: 1;
-    margin-right: 30rem; }
+    margin-right: 28rem; }
     .nav__menu-text .nav__menu-home {
       color: #FFBC6B;
       font-weight: 600; }
@@ -271,11 +273,11 @@ button {
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
             flex-direction: row;
-    margin-left: 24.35rem; }
+    margin-left: 23.35rem; }
     .nav__menu-buttons .nav__menu-btn-join {
-      padding: 0.2rem 2.7rem; }
+      padding: 0.8rem 3.3rem; }
     .nav__menu-buttons .nav__menu-btn-signin {
-      padding: 0.2rem 1.5rem; }
+      padding: 0.8rem 1.5rem; }
 
 .nav__social {
   -webkit-align-self: flex-end;
@@ -292,15 +294,15 @@ button {
             flex-direction: row; }
     .nav__social-list li {
       margin-left: 2.2rem; }
-      .nav__social-list li a i {
-        font-size: 2.222rem;
-        color: #2A263D;
-        -webkit-transition: 0.3s all ease;
-        transition: 0.3s all ease; }
-        .nav__social-list li a i:hover {
-          color: #FFBC6B;
-          -webkit-transition: 0.3s all ease;
-          transition: 0.3s all ease; }
+  .nav__social-icons {
+    font-size: 2.222rem;
+    color: #2A263D;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease; }
+    .nav__social-icons:hover {
+      color: #FFBC6B;
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease; }
 
 .svg-icon {
   fill: #2A263D;
@@ -315,8 +317,8 @@ button {
 
 .header__join {
   position: absolute;
-  bottom: -15rem;
-  right: 20rem; }
+  bottom: -16rem;
+  right: 12.5rem; }
   .header__join-circle {
     width: 24.93rem;
     height: 24.93rem;
@@ -338,19 +340,18 @@ button {
     -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     background: #FFBC6B;
-    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 2; }
     .header__join-star::after {
       content: '';
       position: absolute;
-      width: 100%;
-      height: 100%;
+      width: 11.2rem;
+      height: 8.408rem;
       top: 50%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
+      -webkit-transform: translate(-48%, -50%);
+              transform: translate(-48%, -50%);
       background: url("../img/join.png");
+      background-size: contain;
       background-position: center;
       background-repeat: no-repeat; }
   .header__join-shadow {
@@ -361,7 +362,72 @@ button {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.25);
     -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    background: rgba(0, 0, 0, 0.25);
     z-index: 1; }
+
+.map {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  width: 100%; }
+  .map__image {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    min-height: 101.111rem;
+    background: url("../img/map.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .map__title-wrap {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-align-self: flex-end;
+            align-self: flex-end;
+    background: url("../img/backgroun-title-map.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    -webkit-transform: translateY(67%);
+            transform: translateY(67%); }
+  .map__title {
+    margin-top: 12.333rem;
+    margin-bottom: 3.222rem;
+    color: #FFBC6B;
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: 7.111rem;
+    position: relative;
+    z-index: 10; }
+    .map__title::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: -2rem;
+      width: 14rem;
+      height: 14rem;
+      border: 0.111rem solid #fff;
+      z-index: -1; }
+    .map__title span {
+      color: #fff; }
+  .map__btn-wrap {
+    margin-bottom: 8.361rem; }
