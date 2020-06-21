@@ -7,7 +7,7 @@
     &__image{
         display: flex;
         width: 100%;
-        min-height: 101.111rem;
+        min-height: 99.5rem;
         background: url('../img/map.png');
         background-position: center;
         background-repeat: no-repeat;
@@ -31,7 +31,7 @@
     }
 
     &__title{
-        margin-top: 12.333rem;
+        margin-top: 13.2rem;
         margin-bottom: 3.222rem;
         color: $gold-color;
         font-family: $font-playfair;
@@ -60,5 +60,38 @@
     
     &__btn-wrap{
         margin-bottom: 8.361rem;
+    }
+
+    &__star{
+
+        &-wrap{
+            display: flex;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        &-one{
+            position: absolute;
+            left: 14.3rem;
+            bottom: 3rem;
+            width: 18.333rem;
+            height: 18.333rem;
+        }
+
+        &-two{
+            position: absolute;
+            left: 22rem;
+            bottom: -12.5rem;
+            width: 10.777rem;
+            height: 10.777rem;
+        }
+
+        &-three{
+            position: absolute;
+            left: 4rem;
+            bottom: -2.8rem;
+            width: 9.222rem;
+            height: 9.222rem;
+        }
     }
 }

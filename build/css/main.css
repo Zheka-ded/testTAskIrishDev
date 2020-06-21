@@ -75,32 +75,17 @@ html {
 button {
   border: none; }
 
-.center {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-          justify-content: center;
-  width: 100%;
-  height: 100%; }
-  .center .ddd {
-    width: 1px;
-    height: 100%;
-    background-color: red;
-    z-index: 100; }
+.star {
+  background-color: #FFBC6B;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
 
 .white__btn-wrap {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   border: 0.333rem solid #fff;
-  padding: 1.111rem 2rem;
+  padding: 0.7rem 1.2rem;
   cursor: pointer;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease; }
@@ -212,8 +197,8 @@ button {
               transform: translate(-22.233rem);
       margin-bottom: 4.444rem; }
     .header__description-btn-wrap {
-      -webkit-transform: translate(-4rem);
-              transform: translate(-4rem); }
+      -webkit-transform: translate(-1.35rem);
+              transform: translate(-1.35rem); }
 
 .nav__menu {
   display: -webkit-box;
@@ -232,8 +217,7 @@ button {
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
   padding-top: 3rem;
-  padding-left: 3.777rem;
-  padding-right: 2rem; }
+  padding-left: 3.777rem; }
   .nav__menu-rectangle {
     position: absolute;
     top: 0;
@@ -255,14 +239,14 @@ button {
     font-size: 2.222rem;
     line-height: 3.333rem;
     z-index: 1;
-    margin-right: 28rem; }
+    margin-right: 27rem; }
     .nav__menu-text .nav__menu-home {
       color: #FFBC6B;
       font-weight: 600; }
       .nav__menu-text .nav__menu-home span {
         color: #464069; }
     .nav__menu-text .nav__menu-busines {
-      margin-left: 2.3rem;
+      margin-left: 3.3rem;
       color: #464069;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
   .nav__menu-buttons {
@@ -275,9 +259,9 @@ button {
             flex-direction: row;
     margin-left: 23.35rem; }
     .nav__menu-buttons .nav__menu-btn-join {
-      padding: 0.8rem 3.3rem; }
+      padding: 0.8rem 3.5rem; }
     .nav__menu-buttons .nav__menu-btn-signin {
-      padding: 0.8rem 1.5rem; }
+      padding: 0.8rem 2.3rem; }
 
 .nav__social {
   -webkit-align-self: flex-end;
@@ -381,7 +365,7 @@ button {
     display: -webkit-flex;
     display: flex;
     width: 100%;
-    min-height: 101.111rem;
+    min-height: 99.5rem;
     background: url("../img/map.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -408,7 +392,7 @@ button {
     -webkit-transform: translateY(67%);
             transform: translateY(67%); }
   .map__title {
-    margin-top: 12.333rem;
+    margin-top: 13.2rem;
     margin-bottom: 3.222rem;
     color: #FFBC6B;
     font-family: "Playfair Display", serif;
@@ -431,3 +415,207 @@ button {
       color: #fff; }
   .map__btn-wrap {
     margin-bottom: 8.361rem; }
+  .map__star-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0; }
+  .map__star-one {
+    position: absolute;
+    left: 14.3rem;
+    bottom: 3rem;
+    width: 18.333rem;
+    height: 18.333rem; }
+  .map__star-two {
+    position: absolute;
+    left: 22rem;
+    bottom: -12.5rem;
+    width: 10.777rem;
+    height: 10.777rem; }
+  .map__star-three {
+    position: absolute;
+    left: 4rem;
+    bottom: -2.8rem;
+    width: 9.222rem;
+    height: 9.222rem; }
+
+.opportunities {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 100%;
+  overflow: hidden; }
+  .opportunities__title-wrap {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(#464069), to(rgba(118, 107, 175, 0)));
+    background: linear-gradient(180deg, #464069 0%, rgba(118, 107, 175, 0)); }
+  .opportunities__title {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    color: #464069;
+    margin-top: 37rem;
+    margin-bottom: 3.5rem;
+    font-family: "Playfair Display", serif;
+    font-size: 5.555rem;
+    line-height: 7.444rem;
+    text-align: center;
+    position: relative; }
+    .opportunities__title::before {
+      content: '- Chris Grosser';
+      position: absolute;
+      right: 0;
+      top: 4.5rem;
+      font-size: 2.5rem; }
+  .opportunities__clients {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    width: 100%;
+    margin-top: 9.555rem; }
+    .opportunities__clients-left {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+              flex-direction: column;
+      margin: 2rem 3rem 2rem 19rem;
+      padding-top: 3rem; }
+    .opportunities__clients-title-text {
+      position: relative;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 2.666rem;
+      line-height: 4rem;
+      color: #041A38;
+      margin-bottom: 8rem; }
+      .opportunities__clients-title-text::before {
+        content: '';
+        position: absolute;
+        width: 10.555rem;
+        height: 10.555rem;
+        left: -5.777rem;
+        bottom: -1.222rem;
+        border: 1px solid #B8121A; }
+      .opportunities__clients-title-text span {
+        color: #B8121A; }
+    .opportunities__clients-contact table caption {
+      font-family: "Playfair Display", serif;
+      font-weight: bold;
+      font-size: 2.222rem;
+      line-height: 3rem;
+      color: #B8121A;
+      text-align: left;
+      text-transform: uppercase; }
+    .opportunities__clients-contact table tr .table__title {
+      width: 25.888rem;
+      font-family: "Poppins", sans-serif;
+      font-size: 2rem;
+      line-height: 3rem;
+      color: #041A38; }
+    .opportunities__clients-contact table tr .table__subtitle {
+      width: 44.444rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 3rem;
+      color: #041A38;
+      padding: 1.7rem 0rem; }
+    .opportunities__clients-right {
+      position: relative;
+      margin: 2rem 3rem; }
+      .opportunities__clients-right::before {
+        content: '';
+        position: absolute;
+        background: url("../img/logo-star-1.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 7.423rem;
+        height: 7.111rem;
+        top: 4rem;
+        right: 4rem; }
+    .opportunities__clients-bigcircle {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+              align-items: center;
+      width: 113.333rem;
+      height: 113.333rem;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background: url("../img/big-star-bg-1.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      -webkit-filter: blur(3.5px);
+              filter: blur(3.5px); }
+    .opportunities__clients-smallcircle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+              align-items: center;
+      width: 86.888rem;
+      height: 86.888rem;
+      border: 7rem solid #FFBC6B;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
+    .opportunities__clients-bigstar-wrap {
+      position: absolute;
+      top: 54%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: 125.666rem;
+      height: 125.666rem; }
+    .opportunities__clients-bigstar {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: 123.666rem;
+      height: 123.666rem;
+      background: url("../img/big-star-bg-1.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; }

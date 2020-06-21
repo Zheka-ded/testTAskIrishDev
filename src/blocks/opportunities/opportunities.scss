@@ -1,0 +1,175 @@
+.opportunities{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    &__title-wrap{
+        // padding-top: 10rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        // background: linear-gradient(180deg, #464069 0%, rgba(118, 107, 175, 0) 37.79%);
+        background: linear-gradient(180deg, #464069 0%, rgba(118, 107, 175, 0));
+    }
+
+    &__title{
+        width: max-content;
+        color: $dark-blue-color;
+        margin-top: 37rem;
+        margin-bottom: 3.5rem;
+        font-family: $font-playfair;
+        font-size: 5.555rem;
+        line-height: 7.444rem;
+        text-align: center;
+        position: relative;
+
+        &::before{
+            content: '- Chris Grosser';
+            position: absolute;
+            right: 0;
+            top: 4.5rem;
+            font-size: 2.5rem;
+        }
+    }
+
+    &__clients{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin-top: 9.555rem;
+
+        // Clients left section
+        &-left{
+            display: flex;
+            flex-direction: column;
+            margin: 2rem 3rem 2rem 19rem;
+            padding-top: 3rem;
+        }
+
+        &-title-text{
+            position: relative;
+            font-family: $font-popins;
+            font-weight: 500;
+            font-size: 2.666rem;
+            line-height: 4rem;
+            color: $our-mission-text-color;
+            margin-bottom: 8rem;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 10.555rem;
+                height: 10.555rem;
+                left: -5.777rem;
+                bottom: -1.222rem;
+                border: 1px solid #B8121A;
+            }
+            span{
+                color: $dark-red-color;
+            }
+        }
+
+        &-contact{
+            table{
+                caption{
+                    font-family: $font-playfair;
+                    font-weight: bold;
+                    font-size: 2.222rem;
+                    line-height: 3rem;
+                    color: $dark-red-color;
+                    text-align: left;
+                    text-transform: uppercase;
+                }
+                // width: 634px;
+                tr{
+                    .table__title{
+                        width: 25.888rem;
+                        font-family: $font-popins;
+                        font-size: 2rem;
+                        line-height: 3rem;
+                        color: $our-mission-text-color;
+                        // padding: 2rem 0rem;
+                    }
+                    .table__subtitle{
+                        width: 44.444rem;
+                        font-family: $font-popins;
+                        font-weight: 500;
+                        font-size: 2rem;
+                        line-height: 3rem;
+                        color: $our-mission-text-color;
+                        padding: 1.7rem 0rem;
+                    }
+                }
+            }
+        }
+        // Clients right section
+        &-right{
+            position: relative;
+            margin: 2rem 3rem;
+            &::before{
+                content: '';
+                position: absolute;
+                background: url('../img/logo-star-1.png');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 7.423rem;
+                height: 7.111rem;
+                top: 4rem;
+                right: 4rem;
+            }
+        }
+
+        &-bigcircle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 113.333rem;
+            height: 113.333rem;
+            border-radius: 50%;
+            background: url('../img/big-star-bg-1.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            filter: blur(3.5px);
+        }
+
+        &-smallcircle{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 86.888rem;
+            height: 86.888rem;
+            border: 7rem solid $gold-color;
+            border-radius: 50%;
+            // filter: blur(0px);
+        }
+
+        &-bigstar-wrap{
+            position: absolute;
+            top: 54%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 125.666rem;
+            height: 125.666rem;
+        }
+
+        &-bigstar{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 123.666rem;
+            height: 123.666rem;
+            background: url('../img/big-star-bg-1.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}

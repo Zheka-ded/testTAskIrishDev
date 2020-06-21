@@ -1,5 +1,3 @@
-
-
 const heroList = [
     'big-star-bg-1.png',
     'big-star-bg-2.png',
