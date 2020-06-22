@@ -1,19 +1,15 @@
 .header{
     position: relative;
     width: 100%;
-    // min-height: 200px;
     display: flex;
     flex-direction: row;
-    // margin-top: 23px;
     background-image: url('../img/header-bg-1.png');
     background-position-x: center;
-    // background-position-y: 90px;
     background-position-y: 10rem;
     background-size: cover;
     background-repeat: no-repeat;
 
     &__logo{
-        // margin-left: 15px;
         margin-left: 1.666rem;
 
         &-link{
@@ -35,7 +31,6 @@
         flex-direction: column;
         justify-content: space-between;
         align-self: flex-end;
-        // margin-top: 23px;
         margin-top: 2.555rem;
         margin-right: 8.888rem;
     }
@@ -44,9 +39,7 @@
         display: flex;
         flex-direction: column;
         align-self: center;
-        // padding-top: 97px;
         padding-top: 3.777rem;
-        // padding-bottom: 64px;
         padding-bottom: 7.111rem;
 
         &-text{
@@ -54,11 +47,8 @@
             font-family: $font-popins;
             font-style: normal;
             font-weight: normal;
-            // font-size: 20px;
             font-size: 2.222rem;
-            // line-height: 30px;
             line-height: 3.333rem;
-            // transform: translate(-92px);
             transform: translate(-12.2rem);
         }
 
@@ -67,13 +57,9 @@
             font-family: $font-playfair;
             font-style: normal;
             font-weight: normal;
-            // font-size: 50px;
             font-size: 5.555rem;
-            // line-height: 67px;
             line-height: 7.444rem;
-            // transform: translate(-183px);
             transform: translate(-22.233rem);
-            // margin-bottom: 40px;
             margin-bottom: 4.444rem;
         }
 

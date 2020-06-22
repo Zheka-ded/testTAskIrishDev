@@ -1,5 +1,7 @@
 # testTAskIrishDev
 
+https://zheka-ded.github.io/testTaskIrisDev/build/
+
 Чтобы собрать и запустить проект:
 
 В командной строке, находясь в папке с проектом, нужно выполнить команду: $ npm install или $ yarn. Кому как удобней.

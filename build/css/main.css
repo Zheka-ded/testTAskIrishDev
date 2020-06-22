@@ -414,7 +414,11 @@ button {
     .map__title span {
       color: #fff; }
   .map__btn-wrap {
-    margin-bottom: 8.361rem; }
+    margin-bottom: 8.361rem;
+    -webkit-transform: translate(1rem, -0.8rem);
+            transform: translate(1rem, -0.8rem); }
+    .map__btn-wrap button {
+      padding: 0rem 3.7rem; }
   .map__star-wrap {
     display: -webkit-box;
     display: -webkit-flex;
@@ -545,6 +549,125 @@ button {
       line-height: 3rem;
       color: #041A38;
       padding: 1.7rem 0rem; }
+    .opportunities__clients-biglogo-wrap {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+              flex-direction: row;
+      width: 100%;
+      margin-top: 8rem;
+      position: relative; }
+    .opportunities__clients-biglogo {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      background: url("../img/LOGO-big.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 65rem;
+      height: 27.444rem;
+      -webkit-transform: translate(-19.5rem);
+              transform: translate(-19.5rem); }
+    .opportunities__clients-biglogo-btn-wrap {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+              flex-direction: row;
+      -webkit-align-self: baseline;
+              align-self: baseline;
+      -webkit-box-pack: start;
+      -webkit-justify-content: start;
+              justify-content: start;
+      width: 19.666rem;
+      height: 8.888rem;
+      border: 0.222rem solid #B8121A;
+      -webkit-transform: translate(-4rem);
+              transform: translate(-4rem);
+      cursor: pointer;
+      position: absolute;
+      right: -4rem; }
+      .opportunities__clients-biglogo-btn-wrap button {
+        background: #fff;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        font-family: Playfair Display;
+        font-weight: bold;
+        font-size: 2.444rem;
+        line-height: 4rem;
+        color: #B8121A;
+        -webkit-transform: translate(-4.5rem, 1.5rem);
+                transform: translate(-4.5rem, 1.5rem);
+        position: relative; }
+        .opportunities__clients-biglogo-btn-wrap button .opportunities__clients-svg-arrow {
+          position: absolute;
+          width: 4.555rem;
+          height: 2rem;
+          left: 6rem; }
+    .opportunities__clients-medals {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+              justify-content: center;
+      width: 26.444rem;
+      height: 29.424rem;
+      background: url("../img/for-medal.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative; }
+      .opportunities__clients-medals::before {
+        position: absolute;
+        content: '';
+        width: 66.5%;
+        height: 86%;
+        background: #050506;
+        opacity: 0.5; }
+      .opportunities__clients-medals::after {
+        position: absolute;
+        content: 'Offers \0a Veteran Discount';
+        font-size: 0.8rem;
+        font-weight: bold;
+        white-space: pre;
+        text-align: center;
+        bottom: 1.7rem;
+        right: 50%;
+        -webkit-transform: translate(50%);
+                transform: translate(50%); }
+    .opportunities__clients-medals-sticks {
+      position: absolute;
+      width: 7.31px;
+      height: 225.57px;
+      background: -webkit-gradient(linear, left top, left bottom, from(#AFA4A4), color-stop(48.96%, #E1E1E1), to(#AFA4A4));
+      background: linear-gradient(180deg, #AFA4A4 0%, #E1E1E1 48.96%, #AFA4A4 100%); }
+    .opportunities__clients-medals-stars {
+      position: absolute;
+      background: url("../img/star-small.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .opportunities__clients-medals-logomedal {
+      width: 24.07rem;
+      height: 18.03rem;
+      background: url("../img/medal.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      -webkit-transform: translate(-0.1rem);
+              transform: translate(-0.1rem); }
     .opportunities__clients-right {
       position: relative;
       margin: 2rem 3rem; }
@@ -619,3 +742,60 @@ button {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat; }
+
+.medals-sticks-one {
+  left: 8.5rem; }
+
+.medals-sticks-two {
+  left: 10.6rem; }
+
+.medals-sticks-three {
+  left: 12.7rem; }
+
+.medals-sticks-four {
+  left: 14.9rem; }
+
+.medals-sticks-fiwe {
+  left: 17rem; }
+
+.medals-stars-1 {
+  width: 1.83rem;
+  height: 1.373rem;
+  left: 4.5rem;
+  top: 8rem; }
+
+.medals-stars-2 {
+  width: 2.562rem;
+  height: 1.876rem;
+  left: 4.3rem;
+  top: 10rem; }
+
+.medals-stars-3 {
+  width: 2.995rem;
+  height: 2.211rem;
+  left: 4.5rem;
+  top: 12rem; }
+
+.medals-stars-4 {
+  width: 3.386rem;
+  height: 2.516rem;
+  left: 5.5rem;
+  top: 14rem; }
+
+.medals-stars-5 {
+  width: 3.797rem;
+  height: 2.745rem;
+  left: 8rem;
+  top: 16rem; }
+
+.medals-stars-6 {
+  width: 4.255rem;
+  height: 3.157rem;
+  left: 11rem;
+  top: 17rem; }
+
+.medals-stars-7 {
+  width: 5.765rem;
+  height: 4.255rem;
+  left: 14rem;
+  top: 17.5rem; }
